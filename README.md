@@ -1,1 +1,2 @@
-[published site](https://vikizzz.github.io/Lab2/)
+# FA21 CSE110 Lab3
+https://vikizzz.github.io/fa21-cse110-lab3/
