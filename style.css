@@ -1,6 +1,17 @@
 /* universal style */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: hsl(189, 50%, 94%);
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(255, 211, 218);
+    }
+}
+
 * {
-    background-color: hsl(189, 50%, 94%);
     line-height: 1.6em;
     font-family: Helvetica;
     color: hsl(271, 50%, 32%);
@@ -38,21 +49,34 @@ h3 {
     text-decoration: underline;
 }
 
+
 /* paragraph style */
 p {
     font-size: 16px;
 }
 
 /* list style */
-ul {
+ol {
     margin: auto;
     padding-left: 1 px;
     padding-right: 1 px;
 }
 
+
+ul li:hover {
+    display: inline-flexbox;
+    background-color: rgb(241, 191, 241);
+    color: white;
+}
+
 /* detail style */
 details{
     border-width: thick;
+}
+
+/* text area style */
+textarea:active{
+    color: red;
 }
 
 /* section style */
@@ -73,4 +97,49 @@ section {
     margin-right: 1em;
     padding-top: 10px;
 
+}
+
+/* some layouts */
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#flex-item {
+    width=50%;
+}
+
+.grid-container{
+    display: grid;
+}
+
+#grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2.5;
+    grid-row-start: 1;
+}
+
+#grid-item2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+
+/* Adjacent sibling combinatgor */
+div + ol {
+    color: rgb(9, 9, 243);
+}
+
+/* General sibling combinator */
+section ~ div {
+    color: rgb(255, 4, 87);
+}
+
+/* attribute selector */
+a[href^="#"] {
+    color: rgb(233, 163, 34);
 }
