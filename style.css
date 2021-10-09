@@ -4,8 +4,10 @@
     line-height: 1.6em;
     font-family: Helvetica;
     color: hsl(271, 50%, 32%);
+    position: static;
+    max-width: 100%;
+    min-width: none;
 }
-
 
 /* heading style */
 h2 {
@@ -19,12 +21,12 @@ h2, .title {                                /* title class */
     width: 100%;
     height: 50px;
     top: 0;                           
-    display: flex;
-    text-align: center;    
+    display: inline-block;   
     position: fixed;
     background-color: cornflowerblue;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    text-align: center;
 }
 
 h4 {
@@ -38,7 +40,37 @@ h3 {
 
 /* paragraph style */
 p {
-
     font-size: 16px;
-    position: relative;
+}
+
+/* list style */
+ul {
+    margin: auto;
+    padding-left: 1 px;
+    padding-right: 1 px;
+}
+
+/* detail style */
+details{
+    border-width: thick;
+}
+
+/* section style */
+section {
+	padding-top: 10px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 0.5em;
+}
+
+/* some id selector */
+#date {
+    margin-top: 4em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 10px;
+
 }
