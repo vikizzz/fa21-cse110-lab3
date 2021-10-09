@@ -1,3 +1,12 @@
+/* universal style */
+* {
+    background-color: hsl(189, 50%, 94%);
+    line-height: 1.6em;
+    font-family: Helvetica;
+    color: hsl(271, 50%, 32%);
+}
+
+
 /* heading style */
 h2 {
     color:black;
@@ -25,4 +34,11 @@ h4 {
 h3 {
     color: #2F4F4F;
     text-decoration: underline;
+}
+
+/* paragraph style */
+p {
+
+    font-size: 16px;
+    position: relative;
 }
